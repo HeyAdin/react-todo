@@ -22,5 +22,7 @@ export function CreateTodo(){
             fontSize : "17px",
             fontFamily: "monospace"
         }}>Add todo</button>
+        <input type="text" />
+        <input type="text" />
     </div>
 }
