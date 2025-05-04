@@ -1,10 +1,10 @@
-
+import { CreateTodo } from "./component/CreateTodo"
 
 function App() {
 
   return (
     <>
-      hi there
+      <CreateTodo />
     </>
   )
 }
