@@ -4,8 +4,9 @@ const app = express();
 const PORT = 3002;
 const { createTodo, updateTodo } = require('./types');
 const { todos } = require('./db');
+const cors = require("cors");
 
-app.use(express.json());
+app.use(express.json(),cors());
 
 app.get('/todo', async (req, res) => {
     const allTodos = await todos.find({});
