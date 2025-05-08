@@ -11,12 +11,16 @@ function App() {
             setTodos(data);
           })
       });
-  }, [])
+  }, [todos])
   return (
-    <>
-      <CreateTodo />
-      <Todos todos={todos} />
-    </>
+    <div style={{display:"flex", gap: "100px"}}>
+      <div>
+        <CreateTodo setTodos={setTodos} todos={todos} />
+      </div>
+      <div>
+        <Todos setTodos={setTodos} todos={todos} />
+      </div>
+    </div>
   )
 }
 
